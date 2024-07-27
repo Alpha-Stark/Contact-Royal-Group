@@ -64,9 +64,28 @@
                 width: 40px;
                 height: 40px;
             }
+            .qr-code-wrapper {
+                margin-top: 30px;
+                text-align: center;
+            }
+            .qr-code-wrapper img {
+                width: 120px;
+                height: 120px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+            .qr-code-wrapper p {
+                margin-top: 10px;
+                font-weight: 500;
+                color: #333;
+            }
             @media (max-width: 600px) {
                 .social-icons {
                     flex-wrap: nowrap;
+                }
+                .qr-code-wrapper img {
+                    width: 100px;
+                    height: 100px;
                 }
             }
         </style>
@@ -76,7 +95,7 @@
             <div class="logo-wrapper">
                 <img src="image/IMG_0217-removebg-preview.png" alt="Company Logo" class="logo" />
             </div>
-            <h1>Hasmukh Kukadiya</h1>
+            <h1>Hasmukh Royal</h1>
             <p>CEO</p>
             <div class="social-icons">
                 <a href="https://www.royalstarhk.com/" target="_blank" title="Website">
@@ -85,17 +104,19 @@
                 <a href="https://wa.me/+85262788222" target="_blank" title="WhatsApp">
                     <img src="image/whatsapp-logo-icon-free-png.png" alt="WhatsApp Icon" />
                 </a>
-                <!-- <a href="weixin://dl/chat?ROYAL 李小龙" target="_blank" title="WeChat"> -->
-                <a href="weixin://dl/chat?ROYAL_GROUP" target="_blank" title="WeChat">
+                <!-- <a href="#" title="WeChat">
                     <img src="image/red-wechat.png" alt="WeChat Icon" />
-                    <!-- + 86 159 5844 4460 -->
-                </a>
-                <!-- <a href="tel:+85262788222" target="_blank" title="Contact Number">
-                    <img src="image/phone-icon.jpg" alt="Phone Icon" />
                 </a> -->
                 <a href="mailto:info@royalstarhk.com" target="_blank" title="Email">
                     <img src="image/email logo.png" alt="Email Icon" />
                 </a>
+                <a href="tel:+8615958444460" target="_blank" title="Contact Number">
+                    <img src="image/phone-icon.jpg" alt="Phone Icon" />
+                </a>
+            </div>
+            <div class="qr-code-wrapper">
+                <img src="image/Hasmukh Royal WeChat.jpeg" alt="WeChat QR Code" />
+                <p>Scan to connect on WeChat</p>
             </div>
         </div>
     </body>
