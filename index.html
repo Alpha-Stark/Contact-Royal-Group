@@ -85,6 +85,24 @@
                 font-weight: 500;
                 color: #333;
             }
+            .separator {
+                display: flex;
+                align-items: center;
+                /* margin: 30px 0; */
+                margin-top: 30px;
+            }
+            .separator::before,
+            .separator::after {
+                content: "";
+                flex: 1;
+                border-bottom: 1px solid #ccc;
+            }
+            .separator:not(:empty)::before {
+                margin-right: 0.25em;
+            }
+            .separator:not(:empty)::after {
+                margin-left: 0.25em;
+            }
             @media (max-width: 600px) {
                 .social-icons {
                     flex-wrap: nowrap;
@@ -93,6 +111,10 @@
                     width: 100px;
                     height: 100px;
                 }
+            }
+            .phoneLogo {
+                width: 40px;
+                height: 40px;
             }
         </style>
     </head>
@@ -120,15 +142,24 @@
                 <a href="mailto:info@royalstarhk.com" target="_blank" title="Email">
                     <img src="image/email logo.png" alt="Email Icon" />
                 </a>
-                <a href="tel:+8615958444460" target="_blank" title="Contact Number">
-                    <img src="image/china flag black.png" alt="Phone Icon" />
-                </a>
-                <a href="tel:+85262788222" target="_blank" title="Contact Number">
-                    <img src="image/hongKong Flag Black.png" alt="Phone Icon" />
-                </a>
+            </div>
+            <div class="separator">
                 <a href="tel:+919825107720" target="_blank" title="Contact Number">
-                    <img src="image/india black flag.png" alt="Phone Icon" />
+                    <img src="image/phone-black.png" alt="Phone Icon" class="phoneLogo" />
                 </a>
+            </div>
+            <div class="phone-numbers">
+                <div class="social-icons">
+                    <a href="tel:+8615958444460" target="_blank" title="Contact Number">
+                        <img src="image/china flag black.png" alt="Phone Icon" />
+                    </a>
+                    <a href="tel:+85262788222" target="_blank" title="Contact Number">
+                        <img src="image/hongKong Flag Black.png" alt="Phone Icon" />
+                    </a>
+                    <a href="tel:+919825107720" target="_blank" title="Contact Number">
+                        <img src="image/india black flag.png" alt="Phone Icon" />
+                    </a>
+                </div>
             </div>
         </div>
     </body>
