@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Information</title>
+        <link rel="icon" href="image/IMG_0217 copy.JPG" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                background: #f7f7f7;
+                color: #333;
+            }
+            .container {
+                text-align: center;
+                padding: 30px;
+                background-color: #ffffff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                max-width: 500px;
+                width: 90%;
+            }
+            .logo-wrapper {
+                display: inline-block;
+                padding: 10px;
+                border: 3px solid #007bff;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            .logo {
+                width: 100px;
+                height: auto;
+            }
+            h1 {
+                margin-bottom: 10px;
+                font-weight: 700;
+                color: #333;
+            }
+            p {
+                margin: 5px 0;
+                font-weight: 500;
+            }
+            .contact-info a {
+                color: #007bff;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+            .qr-codes {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-top: 30px;
+            }
+            .qr-codes div {
+                text-align: center;
+            }
+            .qr-codes img {
+                width: 120px;
+                height: 120px;
+                border: 2px solid #007bff;
+                border-radius: 10px;
+            }
+            @media (max-width: 600px) {
+                .qr-codes {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo-wrapper">
+                <img src="image/IMG_0217-removebg-preview.png" alt="Company Logo" class="logo" />
+            </div>
+            <h1>Hasmukh Kukadiya</h1>
+            <p>Founder & CEO</p>
+            <div class="contact-info">
+                <p>Website: <a href="https://www.royalstarhk.com/" target="_blank">royalstarhk.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/+85262788222" target="_blank">+852 6278 8222</a></p>
+                <p>WeChat: <a href="weixin://dl/chat?ROYAL 李小龙" target="_blank">ROYAL 李小龙</a></p>
+                <p>Contact Number: <a href="tel:+85262788222" target="_blank">+852 6278 8222</a></p>
+                <p>Email: <a href="mailto:info@royalstarhk.com" target="_blank">info@royalstarhk.com</a></p>
+            </div>
+            <!-- <div class="qr-codes">
+                <div>
+                    <p>WhatsApp</p>
+                    <img src="image/1200px-QR_Code_Example.svg.png" alt="WhatsApp QR Code" />
+                </div>
+                <div>
+                    <p>WeChat</p>
+                    <img src="image/1200px-QR_Code_Example.svg.png" alt="WeChat QR Code" />
+                </div>
+            </div> -->
+        </div>
+    </body>
+</html>
